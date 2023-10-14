@@ -1,0 +1,132 @@
+/* ======================= IMPORTS ======================= */
+@import "./fonts";
+@import "./reset";
+@import "./vars";
+@import "./mixins";
+
+/* ======================= MAIN STYLES ======================= */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  background: var(--color-black);
+  color: var(--color-white);
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-block-start: 75px;
+}
+
+.container {
+  max-width: 1900px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.page {
+  background-image: url("../images/background.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100vw;
+  // height: 100vh;
+}
+
+.footer {
+  padding-bottom: 30px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  color: inherit;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 46px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+textarea {
+  font-family: "Inter", sans-serif;
+}
+
+/* ====== Mobile menu ======*/
+.header__mobile__menu {
+  z-index: 99;
+
+  .header__line__1 {
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    display: block;
+    transform: translate(0px, -12px);
+    background: var(--color-white);
+    transition: transform 0.5s;
+  }
+
+  .header__line__2 {
+    width: 50px;
+    height: 5px;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    background: var(--color-white);
+    transition: transform 0.5s;
+  }
+
+  .header__line__3 {
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    display: block;
+    transform: translate(20px, 12px);
+    background: var(--color-white);
+    transition: transform 0.5s;
+  }
+}
+
+.openmenu .header__line__1 {
+  transform: translate(16px, -5px) rotate(-45deg);
+}
+
+.openmenu .header__line__2 {
+  transform: translate(0%, -50%) rotate(45deg);
+}
+
+.openmenu .header__line__3 {
+  transform: translate(0px, 0) rotate(-45deg);
+}

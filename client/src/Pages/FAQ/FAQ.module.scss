@@ -1,0 +1,110 @@
+@import "../../Scss/mixins";
+
+.faq__info {
+  @include main-block;
+  
+  margin-top: 85px;
+
+  @media (max-width: 1820px) {
+    margin-right: 0;
+  }
+
+  @media (max-width: 1356px) {
+    width: 100%;
+  }
+
+  @media (max-width: 360px) {
+    padding: 20px;
+  }
+}
+
+.faq__info__block {
+  margin-top: 50px;
+  max-width: 765px;
+
+  ul,
+  li {
+    list-style-type: disc;
+    margin-left: 0.7rem;
+  }
+
+  li {
+    margin-top: 30px;
+
+    @media (max-width: 376px) {
+      font-size: 14px;
+    }
+  }
+
+  p {
+    margin-top: 30px;
+
+    @media (max-width: 376px) {
+      font-size: 14px;
+    }
+  }
+
+  h2 {
+    @media (max-width: 376px) {
+      font-size: 20px;
+    }
+  }
+
+  button {
+    margin-top: 30px;
+    padding: 20px 60px;
+
+    font-family: "Inter-md", sans-serif;
+
+    border-radius: var(--border-radius-lg);
+    background: var(--gradient-cyan);
+
+    transition: box-shadow 0.2s ease;
+
+    @media (min-width: 769px) {
+      &:hover {
+        box-shadow: 0 0 14px #33e1ff;
+      }
+    }
+
+    @media (max-width: 450px) {
+      padding: 20px 30px;
+    }
+
+    @media (max-width: 390px) {
+      padding: 17px 15px;
+    }
+
+    @media (max-width: 376px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.faq__info__socials {
+  margin-top: 30px;
+
+  ul {
+    display: flex;
+    gap: 14px;
+  }
+}
+
+.faq__banner__wrapper {
+  display: flex;
+}
+
+.faq__right__menu {
+  margin-top: 85px;
+  margin-bottom: 50px;
+
+  @media (max-width: 1820px) {
+    display: none;
+  }
+}
+
+.faq__footer {
+  @media (max-width: 1820px) {
+    display: none;
+  }
+}

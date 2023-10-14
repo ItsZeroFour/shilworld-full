@@ -1,0 +1,43 @@
+.form {
+  height: 100vh;
+}
+
+.form__content,
+.form__content > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.form__content {
+  height: 80vh;
+
+  form {
+    input,
+    button,
+    textarea {
+      width: 30rem;
+      padding: 0.5rem;
+      border-radius: var(--border-radius-md);
+    }
+
+    textarea {
+      height: 10rem;
+      resize: none;
+    }
+
+    button {
+      background: var(--gradient-cyan);
+    }
+  }
+}
+
+.form__link {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 1.5rem;
+}

@@ -1,0 +1,43 @@
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin banner {
+  background-image: url("../images/homeSmoke.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+
+  @media (max-width: 908px) {
+    height: 100%;
+  }
+}
+
+@mixin main-block {
+  margin-right: 35px;
+
+  width: 1320px;
+  height: auto;
+  padding: 50px;
+
+  backdrop-filter: blur(10px);
+
+  border: 2px solid var(--color-light-gray);
+  border-radius: var(--border-radius-lg);
+
+  @media (max-width: 1805px) {
+    width: auto;
+    margin-right: 0;
+  }
+}

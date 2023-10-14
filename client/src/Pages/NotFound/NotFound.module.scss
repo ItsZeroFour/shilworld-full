@@ -1,0 +1,89 @@
+.notfound {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notfound__type {
+  display: flex;
+  align-items: center;
+
+  h1 {
+    font-size: 680px;
+    font-family: "Minecraft", sans-serif;
+
+    @media (max-width: 1687px) {
+      font-size: 500px;
+    }
+
+    @media (max-width: 1305px) {
+      font-size: 400px;
+    }
+
+    @media (max-width: 901px) {
+      font-size: 300px;
+    }
+
+    @media (max-width: 613px) {
+      font-size: 200px;
+    }
+
+    @media (max-width: 402px) {
+      font-size: 100px;
+    }
+  }
+
+  @media (max-width: 1305px) {
+    img {
+      width: 70%;
+      height: 60%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: 901px) {
+    img {
+      width: 60%;
+      height: 60%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+  }
+}
+
+.notfound__text {
+  text-align: center;
+
+  h2 {
+    font-size: 54px;
+    font-family: "Inter-bd", sans-serif;
+  }
+
+  p {
+    margin-top: 1rem;
+
+    @media (max-width: 402px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.notfound__link {
+  padding: 20px 90px;
+  margin-top: 2rem;
+
+  font-family: "Inter-md", sans-serif;
+  box-shadow: 0 0 18px #33e1ff;
+
+  border-radius: var(--border-radius-lg);
+  background: var(--gradient-cyan);
+  color: var(--color-dark);
+
+  @media (max-width: 402px) {
+    padding: 20px 30px;
+  }
+}
